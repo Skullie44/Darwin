@@ -1,24 +1,29 @@
 __author__ = 'ADM_Skullie'
 
-import Animal.py
-import Validate.py
+import locomotion
+import reproduction
+import energy
+import Creature
+
+##some means of calling a stored array of specimens already created
+specimens = new Array[]
+
+
 
 class Create:
 
-    locomotion = Validate.ver_locomotion(input('How does this creature move?'))
-    blood = Validate.ver_blood(input('Does this creature have warm blood? Y/N'))
-    respiratory = Validate.ver_respiratory(input('How does this creature breath?'))
-    birth = Validate.ver_birth(input('How does this creature lay eggs? Y/N'))
+##single cell organisms reproduce by splitting
+if specimens.count <= 1:
+    specimen = new Creature()
+    print "you've created a " + specimen.name()
+
+elif specimens.count > 1:
+    ##determine two specimen to Breed
 
 
 
-    animal = dict()
-    animal['blood'] = blood
-    animal['respiratory'] = respiratory
-    animal['birth']= birth
-    animal['locomotion'] = locomotion
+c
 
+class Breed:
 
-    creature = Animal(animal)
-
-    print "you've created a " + creature.name()
+##breeding produces
