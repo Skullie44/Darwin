@@ -2,8 +2,11 @@ __author__ = 'Skullie'
 
 import Specimen
 
+##create the first specimen
+specimen = Specimen(replication,consumption, locomotion)
+
 ##some means of calling a stored array of specimens already created
-specimens = {}
+specimens = []
 
 
 
