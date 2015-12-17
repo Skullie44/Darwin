@@ -1,29 +1,18 @@
-__author__ = 'ADM_Skullie'
+__author__ = 'Skullie'
 
-import locomotion
-import reproduction
-import energy
-import Creature
+import Specimen
 
 ##some means of calling a stored array of specimens already created
-specimens = new Array[]
+specimens = {}
 
 
 
 class Create:
-
-##single cell organisms reproduce by splitting
-if specimens.count <= 1:
-    specimen = new Creature()
-    print "you've created a " + specimen.name()
-
-elif specimens.count > 1:
-    ##determine two specimen to Breed
+    ##single cell organisms reproduce by splitting
+    specimen = reproduction.Replication(specimen)
+    specimens.append(specimen)
 
 
-
-c
 
 class Breed:
-
-##breeding produces
+    ## breeding requires 2 specimen to perform, not doing at this time
