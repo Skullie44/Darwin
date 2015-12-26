@@ -3,14 +3,17 @@ __author__ = 'Skullie'
 import Specimen
 
 ##some means of calling a stored array of specimens already created
-specimens = {}
+##should this become a dictionary? easier cataloging of specimens created
+specimens = []
 
 
 
-class Create:
+class Create(replication, locomotion, energy):
     ##single cell organisms reproduce by splitting
-    specimen = reproduction.Replication(specimen)
-    specimens.append(specimen)
+    specimen = Specimen()
+    specimen.energy(energy)
+    specimen.reproduction(replication)
+    specimen.locomotion(locomotion)
 
 
 
