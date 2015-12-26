@@ -10,3 +10,12 @@ class Specimen(object):
         self.eng = energy
         self.loc = locomotion
 
+    def reproduction(self):
+        return self
+
+    def energy(self):
+        return self
+
+    def locomotion(self):
+        return self
+
